@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi - SMPN 5 Parepare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Tambahan style lokal untuk layout prestasi dengan gambar (sch.id style) */
+        .prestasi-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-top: 4px solid var(--color-accent);
+        }
+        .prestasi-img-wrapper {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .prestasi-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .prestasi-content {
+            padding: 25px;
+        }
+        .badge-prestasi {
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 14pt;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .prestasi-title {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18pt;
+            color: #222;
+        }
+        .prestasi-text p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Responsive layout untuk layar PC/Tablet */
+        @media (min-width: 768px) {
+            .prestasi-item {
+                flex-direction: row;
+            }
+            .prestasi-img-wrapper {
+                width: 40%;
+                max-height: none;
+            }
+            .prestasi-content {
+                width: 60%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/img/logo-sekolah.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">SMPN 5 PAREPARE</span>
+                </a>
+            </div>
+            <div class="nav-menu-area">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang</a></li>
+                    <li class="nav-item"><a href="fasilitas.html" class="nav-link">Fasilitas</a></li>
+                    <li class="nav-item"><a href="prestasi.html" class="nav-link">Prestasi</a></li>
+                    <li class="nav-item"><a href="https://ppdb.pareparekota.go.id" target="_blank" class="nav-link btn-portal">Portal PPDB</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <h1 class="section-title text-center">Galeri Prestasi Sekolah</h1>
+            <p class="text-center" style="max-width: 700px; margin: -20px auto 40px auto; color: var(--color-text-muted);">Bukti nyata dedikasi tenaga pendidik dan semangat juang siswa-siswi UPTD SMPN 5 Parepare di tingkat kota maupun provinsi:</p>
+            
+            <div class="prestasi-list">
+                
+                <!-- PRESTASI 1: DUTA ANAK KOTA PAREPARE 2026 -->
+                <div class="prestasi-item">
+                    <div class="prestasi-img-wrapper">
+                        <!-- Ganti src dengan path foto siswa/sekolah Anda -->
+                        <img src="https://i.ibb.co.com/NggZttKF/723239036-17899269615463006-7282340336066602314-n.webp" alt="Nur Halifah & Sugli Ramadan - Duta Anak Parepare 2026">
+                    </div>
+                    <div class="prestasi-content">
+                        <span class="badge-prestasi">🏆 Duta Anak Kota Parepare 2026</span>
+                        <h2 class="prestasi-title">Siswa UPTD SMPN 5 Parepare Raih Predikat Duta Anak Kota Parepare 2026</h2>
+                        <div class="prestasi-text">
+                            <p>Keberhasilan Nur Halifah menjadi kebanggaan tersendiri bagi keluarga besar UPTD SMP Negeri 5 Parepare karena berhasil terpilih menyandang predikat Duta Anak Kota Parepare Tahun 2026. Tidak hanya itu, sekolah juga patut berbangga karena satu siswa lainnya, Sugli Ramadan, berhasil menembus 12 Besar Finalis Duta Anak Kota Parepare 2026, sebuah capaian luar biasa yang menunjukkan kualitas dan potensi unggul dari siswa Spenli Parepare.</p>
+                            <p>Untuk mencapai posisi bergengsi tersebut, para peserta harus melewati berbagai tahapan seleksi yang sangat ketat, mulai dari wawancara, pembekalan, orasi, penampilan bakat, pembuatan video kampanye, hingga kegiatan sosialisasi dan pembekalan menjelang grand final. Pada tahap berikutnya, peserta kembali diuji melalui sesi tanya jawab yang sengit hingga akhirnya menyaring puluhan peserta menjadi 12 besar finalis terbaik, sebelum diputuskan empat peserta paling layak yang mewakili sekolah-sekolah terbaik di Kota Parepare.</p>
+		            <p> <a href="https://rakyatsulsel.fajar.co.id/2026/06/14/membanggakan-siswa-smp-5-parepare-terpilih-sebagai-duta-anak-kota-parepare-tahun-2026/">sumber: SMPN5 JUARA DUTA ANAK KOTA PAREPARE</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRESTASI 2: REWAD CERPEN BUGIS TERBAIK I -->
+                <div class="prestasi-item">
+                    <div class="prestasi-img-wrapper">
+                        <!-- Ganti src dengan path foto guru/penghargaan Anda -->
+                        <img src="https://i.ibb.co.com/RGrB9vDj/Screenshot-2026-07-05-12-28-15-23-40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="Fikriyana - Penerima Reward Cerpen Bugis Terbaik I">
+                    </div>
+                    <div class="prestasi-content">
+                        <span class="badge-prestasi">🥇 Juara I Tingkat Provinsi</span>
+                        <h2 class="prestasi-title">Guru UPTD SMPN 5 Parepare Raih Reward Cerpen Bugis Terbaik I Sulselbar</h2>
+                        <div class="prestasi-text">
+                            <p>Kabar membanggakan kembali datang dari tenaga pendidik UPTD SMP Negeri 5 Parepare. Ibu Fikriyana dinobatkan sebagai penerima reward Cerpen Bugis Terbaik I tingkat Provinsi Sulawesi Selatan dan Sulawesi Barat lewat karyanya yang berjudul <strong>"Laleng Lisu"</strong>. Penghargaan bergengsi ini diserahkan dalam kegiatan Bimbingan Teknis (Bimtek) Guru Utama Revitalisasi Bahasa Daerah yang digelar di BBPMP Sulsel pada Jumat, 24 April 2026.</p>
+                            <p>Penghargaan ini diraih setelah melalui proses seleksi ketat terhadap puluhan karya cerpen Bugis yang masuk dari berbagai daerah. Kepala UPTD SMP Negeri 5 Parepare, Rahmaniar, S.S., S.Pd., M.Hum., Gr., menyampaikan apresiasi tinggi atas dedikasi ini. Prestasi ini sekaligus memperkuat komitmen kuat UPTD SMP Negeri 5 Parepare dalam mendukung pelestarian bahasa daerah melalui inovasi dan karya sastra di lingkungan pendidikan.</p>
+			    <p>sumber:<a href="https://rakyatsulsel.fajar.co.id/2026/04/24/guru-smpn-5-harumkan-nama-parepare-raih-cerpen-bugis-terbaik-i-se-sulsel/">GURU SMPN5 HARUMKAN NAMA PAREPARE</a> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container"><div class="copyright">&copy; 2026 UPTD SMP Negeri 5 Parepare.</div></div>
+    </footer>
+
+    <script src="js/scc.js"></script>
+</body>
+</html>
