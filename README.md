@@ -1,4 +1,4 @@
 school-official-profile                      
-deemo Statu
+deemo Statup
 dalam demo
 
