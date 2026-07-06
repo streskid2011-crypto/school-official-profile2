@@ -1,4 +1,4 @@
-school-official-profilee                      
-deemo Status
+school-official-profile                      
+deemo Statu
 dalam demo
 
