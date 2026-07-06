@@ -3,96 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestasi Siswa - SMPN 5 Parepare</title>
+    <title>Kategori Prestasi Siswa - UPTD SMPN 5 Parepare</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Gaya Khusus Layout Item Prestasi */
-        .prestasi-item {
-            display: flex;
-            flex-direction: column;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-            overflow: hidden;
-            border-top: 4px solid var(--color-accent);
+        .kategori-wrapper {
+            padding: 40px 0;
         }
-        .prestasi-img-wrapper {
-            width: 100%;
-            max-height: 300px;
-            overflow: hidden;
-            background: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .prestasi-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .prestasi-content {
-            padding: 25px;
-        }
-        .badge-prestasi {
-            color: var(--color-accent);
-            font-weight: bold;
-            font-size: 14pt;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .prestasi-title {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 18pt;
-            color: #222;
-        }
-        .prestasi-text p {
-            margin-bottom: 12px;
-            line-height: 1.6;
-            color: #444;
-            text-align: justify;
-        }
-
-        /* Pagination Component */
-        .pagination-container {
+        .kategori-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--color-primary);
             text-align: center;
-            margin-top: 40px;
-            padding: 20px 0;
+            padding: 40px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: block;
         }
-        .pagination {
-            display: inline-block;
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .kategori-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border-top-color: var(--color-accent);
         }
-        .pagination li {
-            display: inline;
-            margin: 0 4px;
+        .kategori-icon {
+            font-size: 40pt;
+            margin-bottom: 15px;
+            display: block;
         }
-        .pagination a {
+        .kategori-title {
+            font-size: 18pt;
             color: var(--color-primary);
-            padding: 8px 16px;
-            text-decoration: none;
-            border: 1px solid #e1e8ed;
-            border-radius: 4px;
-            font-weight: 600;
-            background-color: #fff;
+            margin-bottom: 10px;
+            font-weight: 700;
         }
-        .pagination li.active a {
-            background-color: var(--color-primary);
-            color: #fff;
-            border: 1px solid var(--color-primary);
-        }
-        .pagination a:hover:not(.active) {
-            background-color: var(--color-bg-gray);
-            border-color: var(--color-primary);
-        }
-
-        @media (min-width: 768px) {
-            .prestasi-item { flex-direction: row; }
-            .prestasi-img-wrapper { width: 40%; max-height: none; }
-            .prestasi-content { width: 60%; padding: 30px; }
+        .kategori-desc {
+            font-size: 11pt;
+            color: var(--color-text-muted);
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -102,7 +49,7 @@
         <div class="nav-container">
             <div class="logo-area">
                 <a href="index.html" class="logo-link">
-                    <img src="assets/img/smpn5.jpg" alt="Logo" class="logo-img">
+                    <img src="assets/img/smpn5.jpg" alt="Logo SMPN 5 Parepare" class="logo-img">
                     <span class="logo-text">SMPN 5 PAREPARE</span>
                 </a>
             </div>
@@ -120,39 +67,33 @@
 
     <section class="section-padding">
         <div class="container">
-            <div style="margin-bottom: 20px;"><a href="prestasi.html" style="color: var(--color-primary); font-weight: 600;">&larr; Kembali ke Pilihan Kategori</a></div>
-            <h1 class="section-title text-center">Galeri Prestasi Siswa-Siswi</h1>
+            <h1 class="section-title text-center">Informasi Prestasi Siswa</h1>
+            <p class="text-center" style="max-width: 700px; margin: -20px auto 5px auto; color: var(--color-text-muted);">
+                Silakan pilih kategori galeri prestasi siswa-siswi UPTD SMP Negeri 5 Parepare di bawah ini:
+            </p>
             
-            <div class="prestasi-list">
-                <div class="prestasi-item">
-                    <div class="prestasi-img-wrapper">
-                        <img src="assets/img/nursugli.webp" alt="Nur Halifah & Sugli Ramadan - Duta Anak Parepare 2026">
-                    </div>
-                    <div class="prestasi-content">
-                        <span class="badge-prestasi">🏆 Duta Anak Kota Parepare 2026</span>
-                        <h2 class="prestasi-title">Siswa UPTD SMPN 5 Parepare Raih Predikat Duta Anak Kota Parepare 2026</h2>
-                        <div class="prestasi-text">
-                            <p>Keberhasilan Nur Halifah menjadi kebanggaan tersendiri bagi keluarga besar UPTD SMP Negeri 5 Parepare karena berhasil terpilih menyandang predikat Duta Anak Kota Parepare Tahun 2026. Tidak hanya itu, sekolah juga patut berbangga karena satu siswa lainnya, Sugli Ramadan, berhasil menembus 12 Besar Finalis Duta Anak Kota Parepare 2026...</p>
-                            <p><a href="https://rakyatsulsel.fajar.co.id/2026/06/14/membanggakan-siswa-smp-5-parepare-terpilled-sebagai-duta-anak-kota-parepare-tahun-2026/" target="_blank" style="color: var(--color-secondary); font-weight: 600; text-decoration: underline;">sumber: Berita Fajar RakyatSulsel</a></p>
-                        </div>
-                    </div>
+            <div class="row kategori-wrapper">
+                <div class="col-2">
+                    <a href="prestasi-akademik.html" class="kategori-card">
+                        <span class="kategori-icon">🥇</span>
+                        <h2 class="kategori-title">Prestasi Akademik</h2>
+                        <p class="kategori-desc">Eksplorasi jejak juara, olimpiade sains, cerdas cermat, dan piagam penghargaan penalaran ilmiah murid Spenli.</p>
+                    </a>
                 </div>
-            </div>
-
-            <div class="pagination-container">
-                <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li class="active"><a href="prestasisiswa.html">1</a></li>
-                    <li><a href="prestasisiswa2.html">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
+                <div class="col-2">
+                    <a href="prestasi-nonakademik.html" class="kategori-card">
+                        <span class="kategori-icon">🏆</span>
+                        <h2 class="kategori-title">Prestasi Non-Akademik</h2>
+                        <p class="kategori-desc">Apresiasi bakat seni, olahraga, keagamaan, serta dedikasi luar biasa organisasi dan ajang kreativitas siswa.</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container"><div class="copyright">&copy; 2026 UPTD SMP Negeri 5 Parepare.</div></div>
+        <div class="container"><div class="copyright">&copy; 2026 UPTD SMP Negeri 5 Parepare. All Rights Reserved.</div></div>
     </footer>
+
 </body>
 </html>
