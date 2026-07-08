@@ -1,0 +1,398 @@
+/* ==========================================================================
+   ARTEFAK STRUKTUR UTAMA: ARSITEKTUR POHON FAKTOR - STYLE.CSS 
+   (CYBERPUNK HIGH SCHOOL EDITION)
+   ========================================================================== */
+
+/* Reset & Base Variables */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* UBAH WARNA: Menggunakan tema Gelap + Neon Cyberpunk */
+    --color-primary: #0a0a12;     /* Hitam Cyber Tekstur Gelap */
+    --color-secondary: #121225;   /* Deep Cyber Purple untuk Kontras Layer */
+    --color-accent: #00ffff;      /* Neon Cyan / Turquoise Utama */
+    --color-accent-alt: #ff007f;  /* Neon Pink / Magenta untuk Variasi */
+    --color-bg-light: #16162a;    /* Latar Belakang Gelap Sekolah Masa Depan */
+    --color-bg-gray: #1f1f38;     /* Abu-abu Ungu untuk Kartu/Komponen */
+    --color-text-dark: #e0e0ff;   /* Teks Terang untuk Latar Belakang Gelap */
+    --color-text-light: #ffffff;  /* Putih Bersih */
+    --color-text-muted: #8fa0dd;  /* Biru Muted Futuristik */
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --line-height: 1.6;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: var(--line-height);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease; /* Diubah ke all agar efek shadow ikut smooth */
+}
+
+/* Utilities Layout (Struktur Dipertahankan Penuh) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24pt;
+    color: var(--color-accent); /* Diubah ke Cyan Neon */
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 700;
+    /* TAMBAHAN: Efek Tulisan Menyala Cyberpunk */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Header & Navbar Top */
+header {
+    background-color: var(--color-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* UBAH: Garis bawah pembatas neon dan shadow gelap */
+    box-shadow: 0 2px 15px rgba(0, 255, 255, 0.15);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.nav-container {
+    display: table;
+    width: 100%;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-area {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo-img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--color-text-light);
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 0.5px;
+    /* TAMBAHAN: Glow pada Judul Sekolah */
+    text-shadow: 0 0 8px var(--color-accent);
+}
+
+.nav-menu-area {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.nav-menu {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: var(--color-text-light);
+    font-weight: 600;
+    font-size: 11pt;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+/* UBAH: Hover Menu menjadi Cyberpunk (Glow Pink/Magenta) */
+.nav-link:hover, .nav-link.active {
+    color: var(--color-accent-alt);
+    background-color: rgba(255, 0, 127, 0.1);
+    border: 1px solid var(--color-accent-alt);
+    text-shadow: 0 0 5px var(--color-accent-alt);
+}
+
+/* UBAH: Tombol Portal dengan Gaya Tombol Neon Menyala */
+.btn-portal {
+    background-color: transparent !important;
+    color: var(--color-accent) !important;
+    border: 2px solid var(--color-accent) !important;
+    font-weight: 700 !important;
+    text-shadow: 0 0 5px var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* UBAH: Hover Portal */
+.btn-portal:hover {
+    background-color: var(--color-accent) !important;
+    color: #000000 !important;
+    box-shadow: 0 0 20px var(--color-accent) !important;
+}
+
+/* Hero Section Landing Page */
+.hero-section {
+    /* UBAH: Overlay gradasi diubah ke tema gelap cyberpunk transparan */
+    background: linear-gradient(rgba(10,10,18,0.8), rgba(22,22,42,0.9)), url('../assets/img/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--color-text-light);
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.hero-title {
+    font-size: 32pt;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    /* TAMBAHAN: Efek teks utama super glow */
+    color: #ffffff;
+    text-shadow: 0 0 10px var(--color-accent-alt), 0 0 30px var(--color-accent-alt);
+}
+
+.hero-subtitle {
+    font-size: 14pt;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text-muted);
+}
+
+/* Grid Components & Cards (Fasilitas, Berita, Prestasi) */
+.row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    margin: 0 -20px;
+}
+
+.col-3 {
+    display: table-cell;
+    width: 33.333%;
+    vertical-align: top;
+}
+
+.col-2 {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+/* UBAH: Card diubah menjadi Cyber-Container */
+.card {
+    background: var(--color-bg-gray);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* TAMBAHAN HOVER: Saat card disentuh, dia akan mengeluarkan aura neon pink */
+.card:hover {
+    transform: translateY(-5px); /* Tetap aman karena tidak merusak struktur tabel */
+    border-color: var(--color-accent-alt);
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    /* TAMBAHAN: Efek filter bioskop cyberpunk pada gambar */
+    filter: hue-rotate(10deg) brightness(0.9);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 13pt;
+    color: var(--color-accent); /* Ganti ke Cyan */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 10.5pt;
+    color: var(--color-text-muted);
+}
+
+/* Sambutan Area & Info Box */
+.sambutan-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    /* UBAH: Border & Shadow neon pada foto sambutan */
+    border: 2px solid var(--color-accent-alt);
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.info-badge {
+    display: inline-block;
+    /* UBAH: Badge dengan tema aksen cyberpunk magenta */
+    background-color: rgba(255, 0, 127, 0.2);
+    color: var(--color-accent-alt);
+    border: 1px solid var(--color-accent-alt);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 9pt;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px var(--color-accent-alt);
+}
+
+/* Footer & Kontak */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 40px 0 20px 0;
+    /* UBAH: Pembatas atas pembungkus footer */
+    border-top: 2px solid var(--color-accent-alt);
+}
+
+.footer-col {
+    display: table-cell;
+    width: 33.333%;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+.footer-title {
+    font-size: 13pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-accent-alt); /* Ganti ke Pink Neon */
+    border-left: 4px solid var(--color-accent-alt);
+    padding-left: 10px;
+    text-shadow: 0 0 8px var(--color-accent-alt);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+/* UBAH: Hover link di footer jadi menyala */
+.footer-links a:hover {
+    color: var(--color-accent);
+    padding-left: 5px;
+    text-shadow: 0 0 5px var(--color-accent);
+}
+
+.social-icons a {
+    display: inline-block;
+    /* UBAH: Background icon social */
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+/* UBAH: Hover social icons */
+.social-icons a:hover {
+    background: var(--color-accent-alt);
+    border-color: var(--color-accent-alt);
+    color: #ffffff;
+    box-shadow: 0 0 12px var(--color-accent-alt);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 9.5pt;
+    color: #6f7f9f;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE: LAPTOP VS HP) - Aman & Struktur Terjaga
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .nav-container, .logo-area, .nav-menu-area {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu-area {
+        margin-top: 15px;
+    }
+    
+    .nav-item {
+        margin: 5px 8px;
+    }
+    
+    .row, .col-3, .col-2, .footer-col {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .col-3, .col-2, .footer-col {
+        margin-bottom: 30px;
+    }
+    
+    .hero-title {
+        font-size: 22pt;
+    }
+    
+    .section-title {
+        font-size: 18pt;
+    }
+    
+    .sambutan-img {
+        margin-bottom: 20px;
+    }
+}
