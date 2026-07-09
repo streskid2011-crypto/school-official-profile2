@@ -1,5 +1,2 @@
 sckoohjhfuci ass lofjhjhgjhgkj jhhh
-jbm,
-nnnn
-nbjs
-njmbjAAdd..324
+jbm kgkjh letsgoo all nightt cyberpunk school
