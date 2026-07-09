@@ -1,3 +1,1 @@
-school-official-profile                      ss
-deemo Statuplnn
-dalam 
+school-official-profile                      s

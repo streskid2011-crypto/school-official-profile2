@@ -95,6 +95,7 @@ header {
     height: 50px;
     vertical-align: middle;
     margin-right: 12px;
+    border-radius: 15px;
 }
 
 .logo-text {
