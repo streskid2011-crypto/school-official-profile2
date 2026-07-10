@@ -1,3 +1,3 @@
-kolah website
+sekolah website
 **roket**
 **cyberpunkk ssedang dalam demo**
