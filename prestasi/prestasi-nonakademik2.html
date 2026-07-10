@@ -17,175 +17,91 @@
         /* Gaya Khusus Layout Item Prestasi */
 
         .prestasi-item {
-
             display: flex;
-
             flex-direction: column;
-
-            background: #fff;
-
+            background: #0f111a; /* Diubah: Dari #fff ke latar belakang gelap futuristik */
             border-radius: 8px;
-
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.2); /* Diubah: Dari hitam transparan ke glow neon cyan */
             margin-bottom: 30px;
-
             overflow: hidden;
-
             border-top: 4px solid var(--color-accent);
-
         }
-
         .prestasi-img-wrapper {
-
             width: 100%;
-
             max-height: 300px;
-
             overflow: hidden;
-
-            background: #f0f0f0;
-
+            background: #1a1d29; /* Diubah: Dari #f0f0f0 ke abu-abu gelap tech */
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
         }
-
         .prestasi-img-wrapper img {
-
             width: 100%;
-
             height: 100%;
-
             object-fit: cover;
-
         }
-
         .prestasi-content {
-
             padding: 25px;
-
         }
-
         .badge-prestasi {
-
             color: var(--color-accent);
-
             font-weight: bold;
-
             font-size: 14pt;
-
             display: block;
-
             margin-bottom: 5px;
-
         }
-
         .prestasi-title {
-
             margin-top: 0;
-
             margin-bottom: 15px;
-
             font-size: 18pt;
-
-            color: #222;
-
+            color: #00f2fe; /* Diubah: Dari #222 ke warna teks neon cyan */
         }
-
         .prestasi-text p {
-
             margin-bottom: 12px;
-
             line-height: 1.6;
-
-            color: #444;
-
+            color: #cdd6f4; /* Diubah: Dari #444 ke teks terang (off-white) agar kontras */
             text-align: justify;
-
         }
-
 
         /* Pagination Component */
-
         .pagination-container {
-
             text-align: center;
-
             margin-top: 40px;
-
             padding: 20px 0;
-
         }
-
         .pagination {
-
             display: inline-block;
-
             list-style: none;
-
             padding: 0;
-
             margin: 0;
-
         }
-
         .pagination li {
-
             display: inline;
-
             margin: 0 4px;
-
         }
-
         .pagination a {
-
             color: var(--color-primary);
-
             padding: 8px 16px;
-
             text-decoration: none;
-
-            border: 1px solid #e1e8ed;
-
+            border: 1px solid #ff007f; /* Diubah: Dari #e1e8ed ke warna border neon pink/magenta */
             border-radius: 4px;
-
             font-weight: 600;
-
-            background-color: #fff;
-
+            background-color: #0f111a; /* Diubah: Dari #fff ke latar gelap */
         }
-
         .pagination li.active a {
-
             background-color: var(--color-primary);
-
             color: #fff;
-
             border: 1px solid var(--color-primary);
-
         }
-
         .pagination a:hover:not(.active) {
-
             background-color: var(--color-bg-gray);
-
             border-color: var(--color-primary);
-
         }
-
 
         @media (min-width: 768px) {
-
             .prestasi-item { flex-direction: row; }
-
             .prestasi-img-wrapper { width: 40%; max-height: none; }
-
             .prestasi-content { width: 60%; padding: 30px; }
-
         }
 
     </style>
@@ -250,9 +166,9 @@
 
                     <div class="prestasi-content">
 
-                        <span class="badge-prestasi">🏆 Duta Anak Kota Parepare 2026</span>
+                        <span class="badge-prestasi">🏆 Cybersecurity Excellence at Cyber High School 5</span>
 
-                        <h2 class="prestasi-title">Siswa UPTD SMPN 5 Parepare Raih Predikat Duta Anak Kota Parepare 2026</h2>
+                        <h2 class="prestasi-title">The outstanding achievement of our student becomes a tremendous source of pride for the entire Cyber High School 5 community. They secured 1st Place in a highly competitive Capture the Flag (CTF) cybersecurity competition. Furthermore, the school celebrates another milestone as [Second Student Name] successfully advanced to the Top 12 Finalists, showcasing the institution's exceptional talent and potential in the tech and cybersecurity fields.</h2>
 
                         <div class="prestasi-text">
 
